@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BMI calculator</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="calculations">
+            <h1>Adult BMI calculator</h1>
+            <form>
+                <label for="heightM">Height in meters</label><br>
+                <input type="number"><br>
+                <label for="weightKG">Weight in kilograms</label><br>
+                <input type="number"><br>
+                <input type="submit" name="Submit" id="submitBtn">
+            </form>
+        </div>
+        <div class="bmiScore">
+            <h2>BMI scores</h2>
+            <p>Underweight: < 18.5 </p>
+            <p>Normal weight: 18.5 - 24.9</p>
+            <p>Overweight: 25 - 29.9</p>
+            <p>Obese</p>
+            <ol>
+                <li>Obese Class I: 30 - 34.9</li>
+                <li>Obese Class II: 35 - 39.9</li>
+                <li>Obese Class III: > 40 (severe or morbid obesity)</li>
+            </ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
