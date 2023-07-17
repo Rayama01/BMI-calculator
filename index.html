@@ -10,12 +10,14 @@
     <div class="mainContainer">
         <div class="calculations">
             <h1>Adult BMI calculator</h1>
-            <form>
-                <label for="heightM">Height in meters</label><br>
-                <input type="number"><br>
-                <label for="weightKG">Weight in kilograms</label><br>
-                <input type="number"><br>
-                <input type="submit" name="Submit" id="submitBtn">
+            <form onsubmit="return false">
+                <label for="heightIn">Height in inches</label><br>
+                <input type="number" class="height"><br>
+                <label for="weightLbs">Weight in pounds</label><br>
+                <input type="number" class="weight"><br>
+                <div class="buttonDiv">
+                    <input type="submit" name="Submit" id="submitBtn">
+                </div>
             </form>
         </div>
         <div class="bmiScore">
@@ -30,7 +32,8 @@
                 <li>Obese Class III: > 40 (severe or morbid obesity)</li>
             </ol>
         </div>
+        <p class="bmiOutput">Your BMI score: <span class="output"></span></p>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
